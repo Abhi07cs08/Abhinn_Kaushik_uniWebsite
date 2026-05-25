@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f5f0e8;
+  background: #0b0b0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(214, 168, 90, 0.16), transparent 28rem),
+    radial-gradient(circle at 82% 4%, rgba(245, 240, 232, 0.06), transparent 24rem),
+    linear-gradient(180deg, #0b0b0f 0%, #0e0e12 46%, #0b0b0f 100%);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 82%);
+}
+
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: 0.18;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.42) 0.6px, transparent 0.6px);
+  background-size: 4px 4px;
+}
+
+::selection {
+  color: #0b0b0f;
+  background: #d6a85a;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/[0.045] shadow-soft backdrop-blur-xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-gold;
+  }
+
+  .heading-xl {
+    @apply font-serif text-4xl font-bold leading-[1.04] text-cream sm:text-5xl lg:text-7xl;
+  }
+
+  .heading-lg {
+    @apply font-serif text-3xl font-bold leading-tight text-cream sm:text-4xl lg:text-5xl;
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-muted sm:text-lg;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-extrabold text-ink shadow-glow transition duration-200 hover:-translate-y-0.5 hover:bg-goldSoft focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-gold/40 bg-gold/5 px-6 py-3 text-sm font-bold text-cream transition duration-200 hover:-translate-y-0.5 hover:border-gold/70 hover:bg-gold/10 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .reveal {
+    @apply translate-y-5 opacity-0 transition duration-700 ease-out;
+  }
+
+  .reveal.is-visible {
+    @apply translate-y-0 opacity-100;
+  }
+}
