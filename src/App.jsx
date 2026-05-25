@@ -33,8 +33,8 @@ const STRATEGY_PACKAGE_LINK = "https://calendly.com/YOUR-LINK/strategy-package";
 const LINKEDIN_URL = "https://www.linkedin.com/in/abhinn-kaushik2028/";
 const CONTACT_EMAIL = "Abhi.Kaushik@mail.utoronto.ca";
 const BRAND_MARK_PATH = "/abhinn-mark.svg";
-// Add this image to /public/abhinn-profile.jpg when ready. The page falls back to AK initials.
-const PROFILE_IMAGE_PATH = "uni2.png";
+// Replace this file in /public/ when updating the profile photo. The page falls back to AK initials.
+const PROFILE_IMAGE_PATH = "/abhinn-profile.png";
 
 const navItems = [
   { label: "Services", href: "#services" },
