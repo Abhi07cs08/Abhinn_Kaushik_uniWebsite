@@ -44,20 +44,21 @@ const navItems = [
 ];
 
 const trustBadges = [
-  "CMU Admit",
-  "UofT CS Pearson Scholar",
-  "Imperial Admit",
-  "1570 SAT",
+  "CMU / Imperial / NUS / NTU admits",
+  "UofT Computer Science Co-op",
+  "AI research + deployment",
   "US / UK / Canada / Singapore",
-  "International Applicant Perspective",
+  "International applicant perspective",
+  "Scholarship strategy",
 ];
 
 const proofFacts = [
-  "Pearson Scholar",
+  "Lester B. Pearson Scholar",
   "1570 SAT",
   "TEDx Speaker",
   "FIRST Global Mauritius",
-  "UofT Research Assistant",
+  "Research Lead @ UTMIST",
+  "RISE Fellows FINALIST",
   "EY Data & AI Intern",
 ];
 
@@ -88,13 +89,13 @@ const credibility = [
   },
   {
     icon: Award,
-    title: "Full-ride scholar",
-    text: "Lester B. Pearson International Scholar at the University of Toronto, a full-ride merit scholarship worth approximately USD 320,000.",
+    title: "Scholarship perspective",
+    text: "Won one of UofT's most selective international merit awards, giving me direct experience with scholarship positioning and global applicant evaluation.",
   },
   {
     icon: Target,
-    title: "1570 SAT",
-    text: "Scored 1570/1600 on the SAT with a 41/45 IB Diploma background.",
+    title: "Academic positioning",
+    text: "Built a competitive testing and IB profile while balancing research, AI projects, robotics, leadership, and international applications.",
   },
   {
     icon: Microscope,
@@ -108,13 +109,13 @@ const credibility = [
   },
   {
     icon: UserCheck,
-    title: "Leadership",
-    text: "Project Lead at UTMIST for Dynamic Few-Shot Object Detection, leading a 7-member research team.",
+    title: "Research Lead @ UTMIST",
+    text: "Research Lead for Dynamic Few-Shot Object Detection at UTMIST, the world's largest undergraduate machine learning club.",
   },
   {
     icon: Sparkles,
     title: "Global experience",
-    text: "FIRST Global Mauritius representative, TEDx speaker, LIYSF Clare Elwell Scholar, Rise finalist, and scholarship winner.",
+    text: "FIRST Global Mauritius representative, TEDx speaker, LIYSF Clare Elwell Scholar, Rise for the World top 500 finalist, and scholarship winner.",
   },
 ];
 
@@ -395,10 +396,10 @@ function ProfileImage() {
 
 function HeroCard() {
   const stats = [
-    "$320k full-ride scholarship",
-    "1570 SAT",
-    "Top global admits",
-    "CS/EECS strategy",
+    "Top CS/STEM admits",
+    "Research leadership",
+    "1,200-device AI deployment",
+    "Multi-system strategy",
   ];
 
   return (
@@ -411,7 +412,7 @@ function HeroCard() {
           <div>
             <p className="text-2xl font-extrabold text-cream">Abhinn Kaushik</p>
             <p className="mt-2 text-sm font-semibold leading-6 text-muted">
-              UofT Computer Science | Pearson Scholar
+              UofT Computer Science Co-op
             </p>
             <p className="mt-3 text-sm leading-6 text-muted">
               CMU | Imperial | NUS | NTU admits
@@ -453,7 +454,7 @@ function Hero() {
             Build a sharper CS/EECS application strategy.
           </h1>
           <p className="body-copy mt-6 max-w-2xl">
-            Admitted to CMU, UofT CS, Imperial, NUS, and NTU. Lester B. Pearson Scholar. 1570 SAT. I help ambitious students clarify what to improve, how to position their work, and how to build a stronger application for top universities.
+            Admitted to CMU, UofT CS, Imperial, NUS, and NTU. I help ambitious students clarify what to improve, how to position their work, and how to build a stronger application for top universities.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href={PROFILE_AUDIT_LINK} className="btn-primary">
