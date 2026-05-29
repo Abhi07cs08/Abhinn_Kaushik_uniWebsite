@@ -396,7 +396,7 @@ function ProfileImage() {
 
 function HeroCard() {
   const stats = [
-    "Top CS/STEM admits",
+    "5 top CS/EECS admits: CMU, UofT, Imperial, NUS, NTU",
     "Research leadership",
     "1,200-device AI deployment",
     "Multi-system strategy",
